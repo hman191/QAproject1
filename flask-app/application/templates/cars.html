@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body_content %}
+    {% for i in carPost %}
+        <div>
+            <p><b> - Car: </b>{{ carPost.car_id }}</p>
+            <p><b> - Car Score: </b>{{ carPost.car_score }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

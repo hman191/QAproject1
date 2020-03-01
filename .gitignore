@@ -1,0 +1,3 @@
+/flask-app/venv/*
+/flask-app/__pychache__/*
+/flask-app/application/__pycache__/*
