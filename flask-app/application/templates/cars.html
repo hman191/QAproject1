@@ -2,8 +2,14 @@
 {% block body_content %}
     {% for i in carPost %}
         <div>
-            <p><b> - Car: </b>{{ carPost.car_id }}</p>
-            <p><b> - Car Score: </b>{{ carPost.car_score }}</p>
+		<h3>{{ i.car_id }}</h3>
+	    <p><b>   Car Score:        </b>{{ i.car_score }}</p>
+	    <p><b>   Speed Score:      </b>{{ i.top_speed }}</p>
+	    <p><b>   Accel Score:      </b>{{ i.acceleration }}</p>
+	    <p><b>   Handling Score:   </b>{{ i.handling }}</p>
+	    <p><b>   HP Score:         </b>{{ i.horsepower }}</p>
+	    <p><b>   Coolness Score:   </b>{{ i.cool_factor }}</p>
+	    <p><b>   Innovation Score: </b>{{ i.innovation}}</p>
         </div>
     {% endfor %}
 {% endblock %}
