@@ -10,5 +10,5 @@ I decided to create a Top Trumps style app, which, using a database to store a l
 The list of cars would only be able to be modified by a developer and not by users. As this is a game style application, this allows for fairness, as the stats would not be able to be changed.
 
 # ERD
-!(https://github.com/hman191/QAproject1/blob/master/Screen%20Shot%202020-03-04%20at%2022.05.41.png "ERD")
+![ERD](https://github.com/hman191/QAproject1/blob/master/Screen%20Shot%202020-03-04%20at%2022.05.41.png "ERD")
 My final ERD is as follows. This shows the one to one relationship between the decks and users. As this was initially designed as a game, it would be a good idea to make sure a user has to think carefully about what cars they use in their deck. This relationship ensures that. Each user can only have one deck, which is matced specifically to that user. 
