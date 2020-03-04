@@ -2,10 +2,6 @@ from application import db
 from application import login_manager
 from flask_login import UserMixin
 
-@login_manager.user_loader
-def load_user(id):
-    return user.query.get(int(user_id))
-
 class car_list(db.Model):
     car_id = db.Column(db.String(30), primary_key=True)
     car_score = db.Column(db.Integer, nullable=False)
@@ -27,7 +23,7 @@ class car_list(db.Model):
             'Innovation Score: ', self.car_score, '\r\n', 
             ])
 
-class user(db.Model, UserMixin):
+class user(db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(40),unique=True, nullable=False)
     username = db.Column(db.String(20), nullable=False)
@@ -45,3 +41,7 @@ class deck(db.Model):
         return ''.join([
             'Car: ', self.car_id, '\r\n',
             ])
+
+@login_manager.user_loader
+def load_user(user_id):
+    return user.query.get(int(user_id))
