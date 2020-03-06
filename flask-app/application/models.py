@@ -23,17 +23,19 @@ class car_list(db.Model):
             'Innovation Score: ', self.car_score, '\r\n', 
             ])
 
-class user(db.Model):
+class User(db.Model, UserMixin):
     user_id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(40),unique=True, nullable=False)
     username = db.Column(db.String(20), nullable=False)
-    password = db.Column(db.String(26), nullable=False)
+    password = db.Column(db.String(64), nullable=False)
+    def get_id(self):
+        return self.user_id
     def __repr__(self):
         return ''.join([
             'Username: ', self.username, '\r\n',
             ])
 
-class deck(db.Model):
+class Deck(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
     car_id = db.Column(db.String(30), db.ForeignKey('car_list.car_id'), nullable=False)
@@ -44,4 +46,4 @@ class deck(db.Model):
 
 @login_manager.user_loader
 def load_user(user_id):
-    return user.query.get(int(user_id))
+    return User.query.get(int(user_id))
