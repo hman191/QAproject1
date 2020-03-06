@@ -5,7 +5,7 @@ from application.models import User, Deck, car_list
 from flask_login import current_user
 
 class LoginForm(FlaskForm):
-    username = StringField('username',
+    username = StringField('Username',
         validators=[
             DataRequired(),
         ]
