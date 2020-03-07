@@ -26,6 +26,8 @@ My Initial ERD was as follows. This shows the one to one relationship between th
 ![ERD](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2016.42.44.png "MVP ERD")
 This is the ERD for my final product. The changes were made to fit my MVP in the time alotted. As you can see, the Computer deck is now removed, which removes the ability to play a game against a random deck. The credit system for the user is also removed. However the relationships are still maintained. The layout of the deck table is also different. This is after encountering an issue when trying to update the table with new cars for the user.
 
+# Risk Assessment
+![Risk Assessment](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2021.37.24.png "Risk Assessment")
 # Wireframes
 ![login wireframe](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2017.11.08.png "Login Wireframe")
 ![Deck wireframe](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2017.18.21.png "Deck Wireframe")
