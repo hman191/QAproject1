@@ -10,13 +10,13 @@ I decided to create a Top Trumps style app, which, using a database to store a l
 The list of cars would only be able to be modified by a developer and not by users. As this is a game style application, this allows for fairness, as the stats would not be able to be changed.
 
 ## Technologies
-Trello
-Git
-Azure
-Flask
-Azure MYSQL database server
-Jenkins
-Python
+*Trello
+*Git
+*Azure
+*Flask
+*Azure MYSQL database server
+*Jenkins
+*Python
 
 # Initial ERD
 ![ERD](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2016.28.00.png "Initial ERD")
