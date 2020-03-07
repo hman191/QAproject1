@@ -22,7 +22,7 @@ This is the ERD for my final product. The changes were made to fit my MVP in the
 ![Deck wireframe](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2017.18.21.png "Deck Wireframe")
 
 # Issues and Improvements
-On the Deck page, typing in the full name o a car is needed in order to update the deck, additionally, every entry needs to be filled in even if the user would like to keep the car the same. In the future I would like to add a drop-down list for each field to allow the user to only change what they want to.
+On the Deck page, typing in the full name of a car is needed in order to update the deck, additionally, every entry needs to be filled in even if the user would like to keep the car the same. In the future I would like to add a drop-down list for each field to allow the user to only change what they want to.
 Also, I would have liked to have a drop down list of cars next to the user's deck so they can check the stats of a specific car to help them make their decision without switching to the cars page.
 
 In the future, to develop the project, I would add the functionality from my initial ERD. So I would add the abaility to play against a randomly generate computer controlled deck with a similar average score to the user's deck, as well as the credits system so the user would have to "buy" cars from a shop in order to add an element of progression.
