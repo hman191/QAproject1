@@ -1,13 +1,93 @@
 {% extends "layout.html" %}
 
 {% block body_content %}
+
 	<h1>Hi, {{ current_user.username }} this is your current deck!</h1>
-	{% for post in deckPost %}
 	<div>
-		{% if post.user_id == current_user.user_id %}
-			<p><b> - Car: </b>{{ post.car_id }}</p>
-		{% endif %}
+		{% for fat in deckFilter %}
+			<li>Car 1: {{ fat.Car1 }}</li>
+			<li>Car 2: {{ fat.Car2 }}</li>
+			<li>Car 3: {{ fat.Car3 }}</li>
+			<li>Car 4: {{ fat.Car4 }}</li>
+			<li>Car 5: {{ fat.Car5 }}</li>
+  		{% endfor %}
 	</div>
-	{% endfor %}
+	<h3>Type the names of the cars you would like to have in your deck</h3>
+	<div class='form'>
+        <form method='POST' action=''>
+            {{ form.hidden_tag() }}
+            <br>
+            <div class='form_group'>
+                {{ form.Car1.label }}
+                {{ form.Car1 }}
+                {% if form.Car1.errors %}
+                    <div class='error'>
+                        {% for error in form.Car1.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+	    <div class='form_group'>
+                {{ form.Car2.label }}
+                {{ form.Car2 }}
+                {% if form.Car2.errors %}
+                    <div class='error'>
+                        {% for error in form.Car2.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+	    <div class='form_group'>
+                {{ form.Car3.label }}
+                {{ form.Car3 }}
+                {% if form.Car3.errors %}
+                    <div class='error'>
+                        {% for error in form.Car3.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+	    <div class='form_group'>
+                {{ form.Car4.label }}
+                {{ form.Car4 }}
+                {% if form.Car4.errors %}
+                    <div class='error'>
+                        {% for error in form.Car4.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+	    <div class='form_group'>
+                {{ form.Car5.label }}
+                {{ form.Car5 }}
+                {% if form.Car5.errors %}
+                    <div class='error'>
+                        {% for error in form.Car5.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <br>
+            <br>
+            <div class='form_group'>
+                {{ form.submit }}
+            </div>
+            <br>
+        </form>
+	<div>
+                {% for jeff in cars %}
+		<p><b>{{ jeff.car_id }}</p></b>
+		{% endfor %}
+        </div>
+    </div>
 	
 {% endblock body_content %}

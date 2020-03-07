@@ -1,5 +1,10 @@
 {% extends "layout.html" %}
 
 {% block body_content %}
-
+	<h1>Welcome to Car Trumps!!</h1>
+	<p>In this game, every car has a score on certain statistics out of 10. You have 5 cars in your deck, and each has it's strengths and weaknesses.</p>
+	<br>
+	<p>You can view the list of cars with their respective stats in the cars page, and update in the deck page</p>
+	<br>
+	<p>If you don't have an account, you can <a href="{{ url_for('register') }}">sign up here</a>. Enjoy!</p>
 {% endblock body_content %}

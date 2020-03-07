@@ -70,3 +70,26 @@ class UpdateAccountForm(FlaskForm):
             user = User.query.filter_by(email=email.data).first()
             if user:
                 raise ValidationError('Email already in use')
+
+class deckForm(FlaskForm):
+    Car1 = StringField('Car 1',
+        validators=[
+            DataRequired(),
+        ])
+    Car2 = StringField('Car 2',
+        validators=[
+            DataRequired(),
+        ])
+    Car3 = StringField('Car 3',
+        validators=[
+            DataRequired(),
+        ])
+    Car4 = StringField('Car 4',
+        validators=[
+            DataRequired(),
+        ])
+    Car5 = StringField('Car 5',
+        validators=[
+            DataRequired(),
+        ])
+    submit = SubmitField('Update')

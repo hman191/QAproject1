@@ -35,13 +35,21 @@ class User(db.Model, UserMixin):
             'Username: ', self.username, '\r\n',
             ])
 
-class Deck(db.Model):
+class Deck(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
-    car_id = db.Column(db.String(30), db.ForeignKey('car_list.car_id'), nullable=False)
+    Car1 = db.Column(db.String(128), nullable=False)
+    Car2 = db.Column(db.String(128), nullable=False)
+    Car3 = db.Column(db.String(128), nullable=False)
+    Car4 = db.Column(db.String(128), nullable=False)
+    Car5 = db.Column(db.String(128), nullable=False)
     def __repr__(self):
         return ''.join([
-            'Car: ', self.car_id, '\r\n',
+            'Car 1: ', self.Car1, '\r\n',
+            'Car 2: ', self.Car2, '\r\n',
+            'Car 3: ', self.Car3, '\r\n',
+            'Car 4: ', self.Car4, '\r\n',
+            'Car 5: ', self.Car5, '\r\n',
             ])
 
 @login_manager.user_loader
