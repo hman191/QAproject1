@@ -10,7 +10,7 @@ I decided to create a Top Trumps style app, which, using a database to store a l
 The list of cars would only be able to be modified by a developer and not by users. As this is a game style application, this allows for fairness, as the stats would not be able to be changed.
 
 ## Technologies
-* Trello
+* [Trello](https://trello.com/b/moiNF5ka/top-trumps-project)
 * Git
 * Azure
 * Flask
