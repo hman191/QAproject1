@@ -6,7 +6,7 @@ Top Trumps Flask App
 To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training.
 
 ## Solution
-I decided to create a Top Trumps style app, which, using a database to store a list of cars and their respective statistic (out of 10), would allow users to store a deck of 5 cars they could then use to play against others.
+I decided to create a Top Trumps style app, which, using a database to store a list of cars and their respective statistics (out of 10), would allow users to store a deck of 5 cars they could then use to play against others.
 The list of cars would only be able to be modified by a developer and not by users. As this is a game style application, this allows for fairness, as the stats would not be able to be changed.
 
 ## Technologies
