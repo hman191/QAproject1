@@ -75,8 +75,10 @@ def account():
 def account_delete():
     user = current_user.user_id
     account = User.query.filter_by(user_id=user).first()
+    accountDeck = Deck.query.filter_by(user_id=user).first()
     logout_user()
     db.session.delete(account)
+    db.session.delete(accountDeck)
     db.session.commit()
     return redirect(url_for('register'))
 
