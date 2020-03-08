@@ -70,7 +70,12 @@ class UpdateAccountForm(FlaskForm):
             user = User.query.filter_by(email=email.data).first()
             if user:
                 raise ValidationError('Email already in use')
-
+    
+    def validate_username(self,username):
+        if username.data != current_user.username:
+            usern = User.query.filter_by(username=username.data).first()
+            if usern:
+                raise ValidationError('Username already in use')
 class deckForm(FlaskForm):
     Car1 = StringField('Car 1',
         validators=[
