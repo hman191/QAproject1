@@ -2,7 +2,7 @@ from application import db
 from application import login_manager
 from flask_login import UserMixin
 
-class car_list(db.Model):
+class car_list(db.Model, UserMixin):
     car_id = db.Column(db.String(30), primary_key=True)
     car_score = db.Column(db.Integer, nullable=False)
     top_speed = db.Column(db.Integer, nullable=False)

@@ -8,14 +8,12 @@ class LoginForm(FlaskForm):
     username = StringField('Username',
         validators=[
             DataRequired(),
-        ]
-    )
+        ])
 
     password = PasswordField('Password',
         validators=[
             DataRequired()
-        ]
-    )
+        ])
 
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
@@ -25,25 +23,21 @@ class RegistrationForm(FlaskForm):
         validators = [
             DataRequired(),
             Email()
-        ]
-    )
+        ])
     username = StringField('username',
         validators = [
             DataRequired(),
             Length(min=4, max=20)
-        ]
-    )
+        ])
     password = PasswordField('Password',
         validators = [
             DataRequired(),
-        ]
-    )
+        ])
     confirm_password = PasswordField('Confirm Password',
         validators = [
             DataRequired(),
             EqualTo('password')
-        ]
-    )
+        ])
     submit = SubmitField('Sign Up')
 
     def validate_email(self, email):
@@ -98,3 +92,33 @@ class deckForm(FlaskForm):
             DataRequired(),
         ])
     submit = SubmitField('Update')
+    def validate_Car1(self, Car1):
+        usercar1 = car_list.query.filter_by(car_id=Car1.data).first()
+        if usercar1:
+            return ('Success')
+        else:
+            raise ValidationError('Car not in list, please enter one listed below')
+    def validate_Car2(self, Car2):
+        usercar2 = car_list.query.filter_by(car_id=Car2.data).first()
+        if usercar2:
+            return ('Success')
+        else:
+            raise ValidationError('Car not in list, please enter one listed below')
+    def validate_Car3(self, Car3):
+        usercar3 = car_list.query.filter_by(car_id=Car3.data).first()
+        if usercar3:
+            return ('Success')
+        else:
+            raise ValidationError('Car not in list, please enter one listed below')
+    def validate_Car4(self, Car4):
+        usercar4 = car_list.query.filter_by(car_id=Car4.data).first()
+        if usercar4:
+            return ('Success')
+        else:
+            raise ValidationError('Car not in list, please enter one listed below')
+    def validate_Car5(self, Car5):
+        usercar5 = car_list.query.filter_by(car_id=Car5.data).first()
+        if usercar5:
+            return ('Success')
+        else:
+            raise ValidationError('Car not in list, please enter one listed below')
