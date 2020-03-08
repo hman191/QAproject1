@@ -41,6 +41,7 @@ On the Deck page, typing in the full name of a car is needed in order to update 
 Also, I would have liked to have a drop down list of cars next to the user's deck so they can check the stats of a specific car to help them make their decision without switching to the cars page.
 
 In the future, to develop the project, I would add the functionality from my initial ERD. So I would add the abaility to play against a randomly generate computer controlled deck with a similar average score to the user's deck, or even against other players online, as well as a credits system so the user would have to "buy" cars from a shop in order to add an element of progression.
+Although the basic functionality is there, I would like to use bootstrap to improve the user experience. For example having the cars and stats displayed as cards with images in the cars page, or having the navbar span across the width of the page just to name a few.
 Finally I would like to add user groups, so that an admin would just need to login to gain access to add cars to the database for users to then add to their deck
 
 # Acknowledgements
