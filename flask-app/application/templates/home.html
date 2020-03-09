@@ -6,5 +6,6 @@
 	<br>
 	<p>You can view the list of cars with their respective stats in the cars page, and update in the deck page</p>
 	<br>
-	<p>If you don't have an account, you can <a href="{{ url_for('register') }}">sign up here</a>. Enjoy!</p>
+	<p>If you don't have an account, you can <a href="{{ url_for('register') }}">sign up here</a>.</p>
+	<p>You're currently logged in as ({{ current_user.username }}). If it's empty, you aren't logged in. If that's not you, or you'd like to login, you can <a href="{{ url_for('logout') }}">click here</a>. Enjoy!</p>
 {% endblock body_content %}
