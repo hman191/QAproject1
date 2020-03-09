@@ -36,6 +36,9 @@ This is the ERD for my final product. The changes were made to fit my MVP in the
 ![login wireframe](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2017.11.08.png "Login Wireframe")
 ![Deck wireframe](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-07%20at%2017.18.21.png "Deck Wireframe")
 
+# Testing
+![Coverage report](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-09%20at%2002.20.12.png "Coverage Report")
+
 # Issues and Improvements
 On the Deck page, typing in the full name of a car is needed in order to update the deck, additionally, every entry needs to be filled in even if the user would like to keep the car the same. In the future I would like to add a drop-down list for each field, as well as a pre-popoulated field with the current car, to allow the user to only change what they want to.
 Also, I would have liked to have a drop down list of cars next to the user's deck so they can check the stats of a specific car to help them make their decision without switching to the cars page.
@@ -45,10 +48,6 @@ Although the basic functionality is there, I would like to use bootstrap to impr
 Finally I would like to add user groups, so that an admin would just need to login to gain access to add cars to the database for users to then add to their deck
 
 In addition to changes in the app, I would also impement more rigurous testing, covering all aspects of the app, from testing the database, to the login system etc.
-
-# Testing
-
-![Coverage report](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-09%20at%2002.20.12.png "Coverage Report")
 
 # Acknowledgements
 Everyone in the room :)
