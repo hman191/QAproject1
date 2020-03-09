@@ -1,3 +1,4 @@
 /flask-app/venv/*
 /flask-app/__pychache__/*
-/flask-app/application/__pycache__/**
+/flask-app/application/__pycache__/*
+/flask-app/tests/__pycache__/*
