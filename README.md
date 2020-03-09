@@ -44,6 +44,12 @@ In the future, to develop the project, I would add the functionality from my ini
 Although the basic functionality is there, I would like to use bootstrap to improve the user experience. For example having the cars and stats displayed as cards with images in the cars page, or having the navbar span across the width of the page just to name a few.
 Finally I would like to add user groups, so that an admin would just need to login to gain access to add cars to the database for users to then add to their deck
 
+In addition to changes in the app, I would also impement more rigurous testing, covering all aspects of the app, from testing the database, to the login system etc.
+
+# Testing
+
+![Coverage report](https://github.com/hman191/QAproject1/blob/master/Documentation/Screen%20Shot%202020-03-09%20at%2002.20.12.png "Coverage Report")
+
 # Acknowledgements
 Everyone in the room :)
 
