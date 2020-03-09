@@ -52,6 +52,6 @@ In addition to changes in the app, I would also impement more rigurous testing, 
 All in all, the biggest issues I encountered were time-management and underestimating the work required to complete a task. The testing part of the process took the biggest hit in this regard. I was not able to get all my tests working, nor was I able to implement integration testing.
 
 # Acknowledgements
-Everyone in the room :)
-And the building
+* Everyone in the room :)
+* And the building
 
